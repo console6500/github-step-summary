@@ -9,15 +9,30 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
-        run: echo "build $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "# Sumamry from build" >> $GITHUB_STEP_SUMMARY    
+      - run: echo "1 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "2 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "3 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "4 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "5 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "6 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
-        run: echo "check $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "# Sumamry from check" >> $GITHUB_STEP_SUMMARY    
+      - run: echo "1 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "2 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "3 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "4 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "5 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "6 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
   foo:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
-        run: echo "foo $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "# Sumamry from foo" >> $GITHUB_STEP_SUMMARY    
+      - run: echo "1 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "2 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "3 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "4 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "5 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+      - run: echo "6 $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
