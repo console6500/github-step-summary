@@ -10,4 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: echo "$GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+        run: echo "build $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "check $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
+  foo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "foo $GITHUB_STEP_SUMMARY" >> $GITHUB_STEP_SUMMARY
